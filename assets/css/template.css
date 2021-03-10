@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#main header {
+  text-align: center;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  line-height: 15px;
+  color: #333;
+}
+#main header #title {
+  font-size: 36px;
+}
+#main header p {
+  font-size: 16px;
+}
+.menu {
+  background-color: #1e1f26;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  font-family: 'Segoe UI';
+  height: 60px;
+  opacity: 0.9;
+}
+.menu,
+nav ul,
+nav li {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 20px;
+}
+
+#main {
+  margin: auto;
+  width: 990px;
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma,
+    Sans-Serif;
+}
+#main section h2 {
+  text-align: center;
+  color: #333;
+}
+.tribute_info {
+  background-color: rgba(91, 94, 95, 0.1);
+  border: 1px solid #dddde4;
+  border-radius: 2px;
+  padding: 10px;
+}
+.paragraph {
+  font-size: 14px;
+  line-height: 1.5;
+  text-indent: 25px;
+  text-align: justify;
+  opacity: 1;
+  font-weight: lighter;
+  color: rgb(73, 69, 69);
+}
+figure {
+  float: left;
+  margin: 20px;
+}
+figcaption {
+  margin-left: 12px;
+}
+footer,
+.tribute-link {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  font-size: 18px;
+}
+.menu_mobile {
+  display: none; /*deixa menu mobile desativado até diminuir o ecra de celular */
+  width: 40px;
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+}
+.mm_line {
+  height: 5px;
+  border-radius: 2px;
+  background-color: #a32929;
+}
+
+@media (max-width: 1200px) {
+  #main {
+    width: 100%;
+    padding: 20px;
+  }
+  .menu,
+  nav,
+  ul {
+    flex-wrap: wrap;
+    height: auto;
+    line-height: 4%;
+  }
+  footer {
+    font-size: 14px;
+  }
+  #main figure img {
+    max-width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+@media (max-width: 720px) {
+  .menu_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .menu nav ul {
+    flex-direction: column;
+    display: none; /* desaparece com o menu*/
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #694318;
+    height: 400px;
+    margin-top: 2px;
+  }
+  nav a {
+    color: #ffffff;
+    font-weight: bolder;
+  }
+  figcaption {
+    font-size: 13px;
+  }
+}
